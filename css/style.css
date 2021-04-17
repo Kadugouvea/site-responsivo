@@ -1,0 +1,88 @@
+/*Curso HTML5, CSS e JS*/
+@charset "UTF-8";
+body{font-family: 'Roboto', sans-serif; font-weight: 300; color: rgb(82, 82, 82);}
+h1{font-weight: 600;}
+h2, h3{font-weight: 500;}
+p{font-weight: 300;}
+
+/****************/
+.clear-fix::after{content:' '; display: block; clear: both;}
+
+.button{display: inline-block; padding: .9em 2.5em; background-color: rgb(17, 129, 110); border-radius: 8px; text-decoration: none; color: #fff; transition: .5s; font-weight: 500;}
+.button:hover{background-color: #37a0a0;}
+
+.top-header{text-align: center;}
+.top-header-logo{margin: .7em 0}
+.top-nav{background-color: #612674;text-align: center;}
+.top-nav ul{margin: 0; padding: 0; list-style: none;}
+.top-nav a{color: #fff; text-decoration: none; padding: 1em; display: block;}
+.top-nav a:hover{background-color: #7c3792;}
+
+.top-content{padding: 1em; text-align: center; background-color: rgb(219, 219, 219); height: max-content;}
+.top-content-title{color: #612674; font-size: 1.375em; margin: 1.375em;}
+.top-content-subtitle{color: #a87bb7; font-size: 1em; line-height: 1.5;}
+.top-content span{font-size: 5em; color:#fff}
+
+.middle-content{padding: 2em; background-color: #f6f6f6; text-align: center;}
+.middle-content-title{font-size: 1.25em; text-transform: uppercase; color: #652e78;}
+.middle-content p{line-height: 1.5; color: #222; /*text-align: justify; width: 100%;*/}
+.middle-content span[class^=icon]{font-size: 4em; color:#612674;}
+
+.main-content{padding: 2em;}
+.main-content-title{font-size: 1.25em; color: #652e78; text-transform: uppercase; letter-spacing: .2em;}
+.main-content p{line-height: 1.2;}
+.main-content-article{margin-bottom: 3.5em;}
+
+.hidden{width: 0; height: 0; overflow: hidden; opacity: 0; display: block;}
+
+.footer{background-color: #25303e; color: #83969f; text-align: center; padding-bottom: 2em;}
+.footer-menushare{background-color: #455569; padding: .5em;}
+.footer-menushare li{display: inline-block; margin: 0 1em;}
+.footer-menushare a{font-size: 1.1em; text-decoration: none; color: #fff; display: block;}
+
+/*---------------------------*/
+@media screen and (max-width: 48em){/*fonte padrão 16px - 780/16 = 48,75em */
+    .top-content span{display: none;}
+}
+
+@media screen and (min-width: 48em){/*fonte padrão 16px - 780/16 = 48,75em */
+    .top-content{background-color: #521a66; color: #fff; padding: 3em 4em;}
+    .top-content-title, .top-content-subtitle{color: #fff;}
+
+    .top-header-logo{float: left;}
+    .top-nav{background-color: transparent; float: right;}
+    .top-nav ul{margin: 0; padding: 0;}
+    .top-nav li{display: inline-block;}
+    .top-nav a{padding: 2em; display: block; color: #521a66 ; font-weight: 500;}
+    .top-nav a:hover{background-color: rgb(245, 245, 245); color: #434144;}
+
+    .middle-content article{float: left; width: 46%; margin:0 2%;}
+
+    .main-content article{float: left; width: 46%; margin:0 2%;}
+}
+
+@media screen and (min-width: 62.5em){/*fonte padrão 16px - 1000/16 = 62,5em */
+    .top-content{background-color: #521a66; color: #fff; background-image: url(../images/bg_topo_1198x670.jpg); background-repeat: no-repeat; background-size: cover; background-position: top center; padding: 10em 4em 3em 4em; height: 30em; }
+
+    .top-content-title{font-size: 2.5em; }
+    .top-content-subtitle{font-size: 1.2em; font-weight: 300; margin-bottom: 2.1em;}
+
+
+}
+
+@media screen and (min-width: 74.8em){/*fonte padrão 16px - 1000/16 = 62,5em */
+    .top-content{background-color: #521a66; color: #fff; background-image: url(../images/bg_topo_1600x1374.jpg); background-repeat: no-repeat; background-size: cover; background-position: top center; padding: 10em; height: max-content; }
+
+    .top-content-title{font-size:3.5em; margin-bottom: 2.2em; text-transform: uppercase; color: rgb(255, 255, 255);}
+    .top-content-subtitle{font-size: 1.5em; font-weight: 500; margin-bottom: 5.1em;}
+    .top-content span{color: rgb(255, 255, 255); font-size: 10em;}
+
+    .middle-content article{float: left; width: 23%; margin:1%;}
+    .middle-content p{text-align: justify; }
+
+    .button{display: inline-block; padding: 1.5em 4.5em; background-color: rgb(17, 129, 110); border-radius: 8px; text-decoration: none; color: #fff; transition: .5s; font-weight: 500;}
+
+    .max-width{max-width: 1366px; margin-left: auto; margin-right: auto;}
+    /*.button:hover{background-color: #37a0a0;} */
+
+}
